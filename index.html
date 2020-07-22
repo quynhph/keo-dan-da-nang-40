@@ -10189,7 +10189,7 @@
                         data-type="countdown"
                         data-minute="1769"
                         data-date-start="0"
-                        data-date-end="1595174494217"
+                        data-date-end="0"
                       >
                         <div class="ladi-countdown">
                           <div
@@ -10250,6 +10250,7 @@
     <div id="backdrop-popup" class="backdrop-popup"></div>
     <div id="lightbox-screen" class="lightbox-screen"></div>
     <script data-cfasync="false" src="./static/js/form-submission-handler.js"></script>
+    <script src="./static/js/index.js"></script>
     <script id="script_lazyload" type="text/javascript">
       (function () {
         var list_element_lazyload = document.querySelectorAll(
@@ -10345,6 +10346,7 @@
           window.LadiPageScript.runEventScroll();
         };
         run();
+        document.getElementById('COUNTDOWN1281').setAttribute('data-date-end', calculationDurationDiscountTime());
       })();
     </script>
     <script type="text/javascript">
